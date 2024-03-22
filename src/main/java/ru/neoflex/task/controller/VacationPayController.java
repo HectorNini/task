@@ -42,7 +42,7 @@ public class VacationPayController {
             currentDate = currentDate.plusDays(1);
         }
         vacationAmount = (int) (yearSalary / 12 / AVERAGE_DAYS_IN_MONTH * workingDays);
-        return "Отпускные (Без НДФЛ): " + vacationAmount + "<br>Потребуется отпускных дней: " + workingDays;
+        return "Отпускные (Без НДФЛ): " + vacationAmount + "\nПотребуется отпускных дней: " + workingDays;
     }
 
     @SneakyThrows
